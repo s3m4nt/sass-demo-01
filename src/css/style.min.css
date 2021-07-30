@@ -1,1 +1,18 @@
-*{box-sizing:border-box;margin:0;padding:0}body{background-color:#f4f4f4;font-family:Arial,Helvetica,sans-serif;line-height:1.6}img{width:100%}.showcase{background-color:#0e6cff;color:#fff;width:600px}.showcase nav{display:flex;align-items:center;justify-content:center}.container{max-width:1100px;padding:0 30px;margin:0 auto;overflow:auto}
+/* Error: Undefined mixin.
+ *    ,
+ * 20 |     @include set-background($secondary-color);
+ *    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   src/scss/_buttons.scss 20:5  @import
+ *   src/scss/style.scss 3:9      root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 20 \2502      @include set-background($secondary-color);\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   src/scss/_buttons.scss 20:5  @import\a   src/scss/style.scss 3:9      root stylesheet";
+}
